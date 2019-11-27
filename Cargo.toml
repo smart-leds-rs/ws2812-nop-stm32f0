@@ -1,0 +1,23 @@
+[package]
+name = "ws2812-nop-stm32f0"
+version = "0.1.0"
+authors = ["David Sawatzke <david-sawatzke@users.noreply.github.com>",
+           "Paul Sajna <sajattack@gmail.com>"]
+edition = "2018"
+description = "Nop-based bitbanger for 48MHz stm32f0 devices"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/smart-leds-rs/ws2812-nop-stm32f0"
+categories = [
+    "embedded",
+    "no-std",
+    "hardware-support"]
+keywords = ["smart-leds", "ws2812", "driver"]
+
+[dependencies]
+smart-leds-trait = "0.2"
+cortex-m = "0.6.1"
+
+[dependencies.embedded-hal]
+features = ["unproven"]
+version = "0.2.3"
